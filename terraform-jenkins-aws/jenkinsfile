@@ -1,0 +1,34 @@
+pipeline{
+    agent any
+    stages{
+
+        stage("starting the process"){
+            steps{
+                
+                sh 'printenv'
+            }
+        }
+        stage("Terraform init stage"){
+            steps{
+            
+                sh'terraform init'
+                
+            }
+        }
+        stage("Terraform plan stage"){
+            steps{
+                sh'terraform plan'
+                
+            }
+        }
+        stage("Terraform approval stage"){
+            steps{
+                sh'terraform ${action} -auto-approve'
+                
+            }
+        }
+    }
+
+
+}
+
