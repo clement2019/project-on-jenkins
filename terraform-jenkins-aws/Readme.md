@@ -1,4 +1,4 @@
-jenkins provisioing of infra using terraform but actually ruuning the terrsform command inside jenkins peiline called jenkinsfile
+jenkins provisioing of infra using terraform but actually ruuning the terraform command inside jenkins pipeline called Jenkinsfile
 
 ## Project name: Nodeapp Deployment projects
 
